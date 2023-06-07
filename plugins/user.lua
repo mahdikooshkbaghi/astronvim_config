@@ -1,14 +1,4 @@
 return {
-  -- You can also add new plugins here as well:
-  -- Add plugins, the lazy syntax
-  -- "andweeb/presence.nvim",
-  -- {
-  --   "ray-x/lsp_signature.nvim",
-  --   event = "BufRead",
-  --   config = function()
-  --     require("lsp_signature").setup()
-  --   end,
-  -- },
  {
   -- For better integration install ripgrep
   "folke/todo-comments.nvim",
@@ -19,5 +9,17 @@ return {
   keys = {
    { "<leader>T", "<cmd>TodoTelescope<cr>"}
   }
+ },
+{
+  "nvim-neo-tree/neo-tree.nvim",
+  opts = {
+   enable_diagnostics = false,
+  },
+},
+{
+  "Mofiqul/dracula.nvim",
+  opts = {
+  italic_comment = true,
+  },
  },
 }
